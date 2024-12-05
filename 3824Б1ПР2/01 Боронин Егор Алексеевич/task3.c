@@ -1,5 +1,11 @@
 // Задача 3. Найти максимум из вешественных чисел a и b
 double max_of_two_numbers(double a, double b)
 {
-  return 0.0;
+  if (a > b) return a;
+  if (a < b) return b;
+  if (a == b)
+  {
+    printf("числа равны");
+    return 0.0;
+  }
 }
