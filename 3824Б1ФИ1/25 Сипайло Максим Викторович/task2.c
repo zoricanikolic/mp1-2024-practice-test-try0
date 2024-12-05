@@ -2,5 +2,13 @@
 // Если a * b >= UINT_MAX, возвращать UINT_MAX
 unsigned int product_of_two_numbers(unsigned int a, unsigned int b)
 {
-  return 0;
+  unsigned long long int lli = a * b;
+  if (lli <= UINT_MAX)
+  {
+    return a * b;
+  }
+  else
+  {
+    return UINT_MAX;
+  }
 }
