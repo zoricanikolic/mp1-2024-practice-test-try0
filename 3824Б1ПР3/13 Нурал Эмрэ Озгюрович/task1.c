@@ -16,3 +16,10 @@ int sum_of_two_numbers(int a, int b)
 		return a + b;
 	}
 }
+
+void main()
+{
+	int a, b;
+  scanf_s("%d %d", &a, &b);
+  printf("%d", sum_of_two_numbers(a, b));
+}
