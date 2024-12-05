@@ -8,14 +8,3 @@ unsigned int product_of_two_numbers(unsigned int a, unsigned int b)
     }
     return a * b;
 }
-
-int main(){
-    unsigned int a, b, c;
-    scanf("%u", &a);
-    scanf("%u", &b);
-
-    c = product_of_two_numbers(a,b);
-    printf("%u", c);
-
-    return 0;
-}
