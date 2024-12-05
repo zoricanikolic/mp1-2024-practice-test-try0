@@ -3,13 +3,13 @@
 // Если a + b <= INT_MIN, возвращать INT_MIN
 
 #include <limits.h>
-
 int sum_of_two_numbers(int a, int b)
 {
-    if (a + b >= INT_MAX) {
-        return INT_MAX;
-    }
-    else if (a + b <= INT_MIN) {
+    if (a <= 0 && b <= 0 && a + b > 0 || a + b == INT_MIN) {
         return INT_MIN;
     }
+    else if (a >= 0 && b >= 0 && a + b < 0 || a + b == INT_MAX) {
+        return INT_MAX;
+    }
+    else return a + b;
 }
