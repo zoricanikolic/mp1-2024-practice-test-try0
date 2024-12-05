@@ -15,14 +15,3 @@ int sum_of_two_numbers(int a, int b)
 
     return a + b;
 }
-
-int main() {
-    int a, b, c;
-    scanf("%d", &a);
-    scanf("%d", &b);
-
-    c = sum_of_two_numbers(a,b);
-    printf("%d", c);
-
-    return 0;
-}
