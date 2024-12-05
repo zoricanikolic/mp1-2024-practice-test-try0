@@ -5,18 +5,11 @@
 
 int sum_of_two_numbers(int a, int b)
 {
-    if (a > 0 && b > 0) {
-        if (a >= INT_MAX - b) {
-            return INT_MAX;
-        }
-        else {
-            return a + b;
-        }
+    if (a > 0 && b > 0 && a >= INT_MAX - b) {
+        return INT_MAX;
     }
-    else if (a < 0 && b < 0) {
-        if (a <= INT_MIN - b) {
-            return INT_MIN;
-        }
+    else if (a < 0 && b < 0 && a <= INT_MIN - b) {
+        return INT_MIN;
     }
     else return a + b;
 }
