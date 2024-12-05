@@ -8,14 +8,15 @@
 
 unsigned int product_of_two_numbers(unsigned int a, unsigned int b)
 {
-	if (a * b >= UINT_MAX)
+
+	if (double(a)/2 * double(b)/2 >= double(UINT_MAX)/4)
 	{
 		printf("%u", UINT_MAX);
 		return UINT_MAX;
 	}
 	else
 	{
-		printf("%u", a*b);
+		printf("%u", a * b);
 		return a * b;
 	}
 }
