@@ -6,4 +6,5 @@ int sum_of_two_numbers(int a, int b)
 {int c=a+b;
  if (c>=INT_MAX){return INT_MAX;}
  if (c<=INT_MIN){return INT_MIN;}
+ else{return c;}
 }
