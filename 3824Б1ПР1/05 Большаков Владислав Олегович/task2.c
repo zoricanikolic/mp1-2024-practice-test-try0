@@ -4,6 +4,6 @@
 unsigned int product_of_two_numbers(unsigned int a, unsigned int b)
 {
   long long c = long long(a)*long long(b);
-  if (c>=UINT_MAX) return UINT_MAX
+  if (c>=UINT_MAX) return UINT_MAX;
   return a*b;
 }
