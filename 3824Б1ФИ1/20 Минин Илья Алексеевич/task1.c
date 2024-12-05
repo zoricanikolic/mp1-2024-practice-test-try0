@@ -7,8 +7,12 @@ int sum_of_two_numbers(int a, int b)
   {
     return INT_MAX;
   }
-  if (a + b <= INT_MIN)
+  elif (a + b <= INT_MIN)
   {
     return INT_MIN;
+  }
+  else
+  {
+    return a + b;
   }
 }
