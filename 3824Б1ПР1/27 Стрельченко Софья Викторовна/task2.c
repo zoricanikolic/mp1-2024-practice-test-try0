@@ -3,10 +3,10 @@
 #include<limits.h>
 unsigned int product_of_two_numbers(unsigned int a, unsigned int b)
 {
-	unsigned long long p = unsigned long long(a) * unsigned long long(b);
-	if (p >= UINT_MAX) {
+	unsigned long long pr = unsigned long long(a) * unsigned long long(b);
+	if (pr >= UINT_MAX) {
 		return UINT_MAX;
 	}
-	return p;
+	return pr;
 	return 0;
 }
