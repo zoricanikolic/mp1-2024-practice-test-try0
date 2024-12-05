@@ -4,7 +4,7 @@
 unsigned int product_of_two_numbers(unsigned int a, unsigned int b)
 {
   unsigned int c = a * b;
-  if (UINT_MAX - c >= 0) {
+  if (UINT_MAX - c <= 0) {
     return UINT_MAX;
   } else {
     return c;
