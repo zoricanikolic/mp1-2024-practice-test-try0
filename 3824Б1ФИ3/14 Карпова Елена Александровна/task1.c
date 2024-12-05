@@ -5,8 +5,8 @@
 #include <limits.h>
 
 int sum_of_two_numbers(int a, int b)
-{
-  int result = 0;
+{ 
+	int result = 0;
 	result = a + b;
 	if (result >= INT_MAX) return INT_MAX;
 	else if (result <= INT_MIN) return INT_MIN;
