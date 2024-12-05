@@ -8,4 +8,3 @@ unsigned int product_of_two_numbers(unsigned int a, unsigned int b) {
     }
     return a * b;
 }
-
