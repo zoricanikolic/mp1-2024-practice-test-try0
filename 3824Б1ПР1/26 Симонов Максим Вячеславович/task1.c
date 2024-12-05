@@ -7,5 +7,5 @@ int sum_of_two_numbers(int a, int b)
 	long long result = (long long)a + (long long)b;
 	if (result >= INT_MAX) { return INT_MAX; }
 	if (result <= INT_MIN) { return INT_MIN; }
-	return a + b;
+	return result;
 }
