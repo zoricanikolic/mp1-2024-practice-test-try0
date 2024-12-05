@@ -3,9 +3,12 @@
 // Если a + b <= INT_MIN, возвращать INT_MIN
 #include <limits.h>
 
-unsigned int product_of_two_numbers(unsigned int a, unsigned int b) {
-    if (a > 0 && b > UINT_MAX / a) {
-        return UINT_MAX;
+int sum_of_two_numbers(int a, int b) {
+    if (b > 0 && a > INT_MAX - b) {
+        return INT_MAX;
     }
-    return a * b;
+    if (b < 0 && a < INT_MIN - b) {
+        return INT_MIN;
+    }
+    return a + b; 
 }
