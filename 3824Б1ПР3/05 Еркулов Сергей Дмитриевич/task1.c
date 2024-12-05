@@ -2,8 +2,7 @@
 // Если a + b >= INT_MAX, возвращать INT_MAX
 // Если a + b <= INT_MIN, возвращать INT_MIN
 int sum_of_two_numbers(int a, int b) {
-    int sum;
-    sum = a + b;
+    long long sum = (long long)a + (long long)b;
 
     if (sum >= INT_MAX) {
         return INT_MAX;
