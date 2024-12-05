@@ -5,5 +5,5 @@ unsigned int product_of_two_numbers(unsigned int a, unsigned int b)
 {
 	unsigned long long result = (unsigned long long)a * (unsigned long long)b;
 	if (result >= UINT_MAX) { return UINT_MAX; }
-	return a * b;
+	return result;
 }
