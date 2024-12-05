@@ -3,9 +3,8 @@
 // Если a + b <= INT_MIN, возвращать INT_MIN
 #include <limits.h>
 int sum_of_two_numbers(int a, int b)
-{  int c;
+{  double c;
    if (c >= INT_MAX) return INT_MAX;
    else return INT_MIN;
-   return c;
-   return 0;
+   return (int)c;
 }
