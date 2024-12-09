@@ -1,8 +1,12 @@
 // Задача 2. Найти произведение натуральных чисел a и b
 // Если a * b >= UINT_MAX, возвращать UINT_MAX
+#include <limits.h>
+#include <math.h>
+
 unsigned int product_of_two_numbers(unsigned int a, unsigned int b) {
-  if (a > 0 && b > UINT_MAX / a) {
+  if ((unsigned long long)a * b > UINT_MAX) {
     return UINT_MAX;
+  } else {
+    return a * b;
   }
-  return a * b;
 }
