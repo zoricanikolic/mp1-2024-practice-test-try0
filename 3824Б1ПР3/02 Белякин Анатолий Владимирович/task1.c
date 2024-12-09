@@ -4,11 +4,8 @@
 #include <stdio.h>
 #include <limits.h>
 #include <clocale>
-
 int sum_of_two_numbers(int a, int b)
 {
-  return 0;
-}
     if (a > 0 && b > 0 && a > INT_MAX - b) {
         return INT_MAX; 
     }
