@@ -5,14 +5,11 @@
 #include <limits.h> // Для UINT_MAX
 unsigned int product_of_two_numbers(unsigned int a, unsigned int b)
 {
-  return 0;
-}
     if (b != 0 && a > UINT_MAX / b) {
         return UINT_MAX; 
     }
     return a * b;
 }
-
 int main()
 {
     setlocale(LC_ALL, "RUS");
@@ -28,6 +25,5 @@ int main()
     else {
         printf("Произведение чисел %u и %u равно %u\n", a, b, result);
     }
-
     return 0;
 }
