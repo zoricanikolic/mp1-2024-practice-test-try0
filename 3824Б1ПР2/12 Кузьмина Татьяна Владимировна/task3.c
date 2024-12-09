@@ -7,5 +7,7 @@ double max_of_two_numbers(double a, double b)
   if(a < b){
     return b
   }
-  return 0.0;
+  if(a == b){
+    return a;
+  }
 }
