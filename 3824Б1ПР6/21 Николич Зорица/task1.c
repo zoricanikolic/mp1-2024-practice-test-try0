@@ -10,7 +10,7 @@ int sum_of_two_numbers(int a, int b)
         return INT_MAX;  
     }
     if (a < 0 && b < INT_MIN - a) {
-        return INT_MIN;
+        return INT_MIN; 
     }
 
     return a + b;
